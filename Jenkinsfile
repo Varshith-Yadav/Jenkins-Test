@@ -2,7 +2,7 @@ pipeline{
     agent any
     tools{
         maven  'maven'
-        JDK  'jdk'
+        jdk  'jdk'
     }
 
     stages{
@@ -20,7 +20,7 @@ pipeline{
                 }
             }
         }
-        stage("Deliviry"){
+        stage("Delivery"){
             steps{
                 script{
                     sh './scripts/deliver.sh'
